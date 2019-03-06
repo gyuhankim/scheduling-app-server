@@ -8,7 +8,8 @@ const timeSlotSchema = new mongoose.Schema({
   endTime: {type: String, required: true},
   firstName: String,
   lastName: String,
-  phoneNumber: String
+  phoneNumber: String,
+  available: Boolean
 })
 
 timeSlotSchema.set('toObject', {

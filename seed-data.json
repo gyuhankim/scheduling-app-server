@@ -5,7 +5,8 @@
     "endTime": "10AM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "1",
@@ -13,7 +14,8 @@
     "endTime": "11AM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "2",
@@ -21,7 +23,8 @@
     "endTime": "12PM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "3",
@@ -29,7 +32,8 @@
     "endTime": "1PM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "4",
@@ -37,7 +41,8 @@
     "endTime": "2PM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "5",
@@ -45,7 +50,8 @@
     "endTime": "3PM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "6",
@@ -53,7 +59,8 @@
     "endTime": "4PM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   },
   {
     "timeID": "7",
@@ -61,6 +68,7 @@
     "endTime": "5PM",
     "firstName": "",
     "lastName": "",
-    "phoneNumber": ""
+    "phoneNumber": "",
+    "available": "true"
   } 
 ]
