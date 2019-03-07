@@ -16,8 +16,8 @@ This is the server documentation for [CARFIX](https://stark-fjord-78742.herokuap
 ## Run Locally
 1) Clone this repo
 2) `npm i` to install dependencies
-3) Run `mongod` in a terminal to start MongoDB (_requires [MongoDB](https://www.mongodb.com/download-center/community)_)
-4) `npm start` in a _seperate terminal_ to spin up the server
+3) Run `mongod` in a terminal to start MongoDB (**requires [MongoDB](https://www.mongodb.com/download-center/community)**)
+4) `npm start` in a **seperate terminal** to spin up the server
 
 ## Client Repo
 [CARFIX Client Repot](https://github.com/gyuhankim/scheduling-app-client)
