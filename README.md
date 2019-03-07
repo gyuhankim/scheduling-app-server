@@ -2,6 +2,7 @@
 
 ## Table of Contents
 - [Introduction](#introduction)
+- [Run Locally](#run-locally)
 - [Tech Stack](#tech-stack)
 - [Database](#database)
   - [Game Schema](#game-schema)
@@ -12,7 +13,13 @@
   - [Users](#users)
 
 ## Introduction
-This is the server documentation for [LaunchPad.gg](https://mysterious-sands-19667.herokuapp.com/).
+This is the server documentation for [CARFIX](https://stark-fjord-78742.herokuapp.com/).
+
+## Run Locally
+1) Clone this repo
+2) `npm i` to install dependencies
+3) Run `mongod` in a terminal to start MongoDB (_requires [MongoDB](https://www.mongodb.com/download-center/community)_)
+4) `npm start` in a _seperate terminal_ to spin up the server
 
 ## Tech Stack
 * Node
@@ -20,91 +27,36 @@ This is the server documentation for [LaunchPad.gg](https://mysterious-sands-196
 * MongoDB
 * Mongoose
 * Morgan
-* Passport
-* BCryptJS
-* JSONWebToken
-* dotEnv
-* Axios
-* cron
-* Mocha
-* Chai
-* [IGDB API](https://igdb.github.io/api/)
 
 ## Database
-LaunchPad.gg uses MongoDB / Mongoose for persistence of data. The "User" model stores references to ObjectIds from the "Games" collection as "Favorites".
+CARFIX server uses MongoDB / Mongoose / MLab for data persistence.
 The database uses the below schemas:
 
-### Game Schema
+### TimeSlot Schema
 ```
-id: {type: Number, required: true},
-  name: {type: String, required: true},
-  summary: String,
-  first_release_date: Number,
-  release_dates: [
-    {
-      platform: Number,
-      category: Number,
-      human: String
-    }
-  ],
-  platforms: [Number],
-  cover: Object,
-  screenshots: [
-    {
-      url: String,
-    }
-  ],
-  videos: [
-    {
-      name: String,
-      video_id: String
-    }
-  ]
-}
-```
-
-### User Schema
-```
-firstName: {
+timeID: {
+    type: Number, 
+    required: true
+  },
+  startTime: {
     type: String, 
     required: true
   },
-  lastName: {
+  endTime: {
     type: String, 
     required: true
   },
-  username: {
-    type: String,
-    required: true,
-    unique: true
-  },
-  password: {
-    type: String,
-    required: true
-  },
-  games: [{ type: mongoose.Schema.Types.ObjectId, ref: 'Game' }]
-}
+  firstName: String,
+  lastName: String,
+  phoneNumber: String,
+  available: Boolean
 ```
 
 ## Endpoints
 All requests and responses are in JSON format.
 
-### Games
+### Schedule
 Action | Path |
 --- | --- |
-GET (all) | https://launchpad-server.herokuapp.com/games |
-GET (single) | https://launchpad-server.herokuapp.com/games/:id |
-
-### Favorites
-Action | Path |
---- | --- |
-GET | https://launchpad-server.herokuapp.com/favorites |
-POST | https://launchpad-server.herokuapp.com/favorites |
-DELETE | https://launchpad-server.herokuapp.com/favorites |
-
-### Users
-Action | Path |
---- | --- |
-POST (register) | https://launchpad-server.herokuapp.com/register |
-POST (login) | https://launchpad-server.herokuapp.com/login |
-POST (refresh JWT) | https://launchpad-server.herokuapp.com/login/refresh |
+GET (all) | https://scheduling-app-server.herokuapp.com/api/schedule |
+POST (one) | https://scheduling-app-server.herokuapp.com/api/schedule |
