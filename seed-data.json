@@ -1,8 +1,8 @@
 [
   {
     "timeID": "0",
-    "startTime": "9AM",
-    "endTime": "10AM",
+    "startTime": "9:00AM",
+    "endTime": "10:00AM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -10,8 +10,8 @@
   },
   {
     "timeID": "1",
-    "startTime": "10AM",
-    "endTime": "11AM",
+    "startTime": "10:00AM",
+    "endTime": "11:00AM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -19,8 +19,8 @@
   },
   {
     "timeID": "2",
-    "startTime": "11AM",
-    "endTime": "12PM",
+    "startTime": "11:00AM",
+    "endTime": "12:00PM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -28,8 +28,8 @@
   },
   {
     "timeID": "3",
-    "startTime": "12PM",
-    "endTime": "1PM",
+    "startTime": "12:00PM",
+    "endTime": "1:00PM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -37,8 +37,8 @@
   },
   {
     "timeID": "4",
-    "startTime": "1PM",
-    "endTime": "2PM",
+    "startTime": "1:00PM",
+    "endTime": "2:00PM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -46,8 +46,8 @@
   },
   {
     "timeID": "5",
-    "startTime": "2PM",
-    "endTime": "3PM",
+    "startTime": "2:00PM",
+    "endTime": "3:00PM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -55,8 +55,8 @@
   },
   {
     "timeID": "6",
-    "startTime": "3PM",
-    "endTime": "4PM",
+    "startTime": "3:00PM",
+    "endTime": "4:00PM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
@@ -64,8 +64,8 @@
   },
   {
     "timeID": "7",
-    "startTime": "4PM",
-    "endTime": "5PM",
+    "startTime": "4:00PM",
+    "endTime": "5:00PM",
     "firstName": "",
     "lastName": "",
     "phoneNumber": "",
