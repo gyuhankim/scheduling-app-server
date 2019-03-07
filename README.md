@@ -1,4 +1,4 @@
-# LaunchPad.gg Server
+# CARFIX Server
 
 ## Table of Contents
 - [Introduction](#introduction)
