@@ -12,7 +12,20 @@ router.get('/schedule', (req, res, next) => {
     .then(results => {
       res.json(results);
     })
-    .catch(err => res.status(500).json({message: 'Whoops, something blew up'}));
+    .catch(() => res.status(500).json({message: 'Whoops, something blew up!'}));
+})
+
+router.post('/schedule', (req, res, next) => {
+  const { timeID, firstName, lastName, phoneNumber, available } = req.body;
+  const updatedAppointment = { timeID, firstName, lastName, phoneNumber, available };
+
+  TimeSlot.findOneAndUpdate({ timeID }, updatedAppointment, { new: true })
+    .then(result => {
+      res.json(result);
+    })
+    .catch(() => {
+      res.status(500).json({message: 'Whoops, something blew up while trying to update schedule!'})
+    })
 })
 
 module.exports = router;
