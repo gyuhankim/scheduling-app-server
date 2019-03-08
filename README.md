@@ -21,7 +21,7 @@ This is the server documentation for [CARFIX](https://stark-fjord-78742.herokuap
 5) `npm start` to spin up the server
 
 ## Client Repo
-[CARFIX Client Repot](https://github.com/gyuhankim/scheduling-app-client)
+[CARFIX Client Repo](https://github.com/gyuhankim/scheduling-app-client)
 
 ## Tech Stack
 * Node
